@@ -26,3 +26,8 @@ vim.keymap.set('n', '<leader>h', ':nohlsearch<CR>')
 -- Tabs
 vim.keymap.set('n', '<Tab>', ':BufferLineCycleNext<CR>')
 vim.keymap.set('n', '<s-Tab>', ':BufferLineCyclePrev<CR>')
+
+-- LSP
+vim.keymap.set('n', '<leader>l', vim.diagnostic.open_float)
+vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
+vim.keymap.set('n', ']d', vim.diagnostic.goto_next)

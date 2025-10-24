@@ -20,9 +20,6 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-neo-tree/neo-tree.nvim', {'branch': 'v3.x'}
 Plug 'nvim-lualine/lualine.nvim'
 
-Plug 'L3MON4D3/LuaSnip', {'tag': 'v2.*', 'do': 'make install_jsregexp'} " Snippets
-Plug 'saadparwaiz1/cmp_luasnip'
-
 call plug#end()
 
 lua require('core.options')

@@ -1,14 +1,13 @@
-local lspconfig = require('lspconfig')
-lspconfig.pylsp.setup {}
-lspconfig.clangd.setup {}
-lspconfig.marksman.setup {}
-lspconfig.prismals.setup {}
-lspconfig.rust_analyzer.setup {}
-
-vim.keymap.set('n', '<leader>lD', vim.diagnostic.open_float)
-vim.keymap.set('n', '[d', vim.diagnostic.goto_prev)
-vim.keymap.set('n', ']d', vim.diagnostic.goto_next)
-vim.keymap.set('n', '<leader>ld', vim.diagnostic.setloclist)
+vim.lsp.config('rust-analyzer', {
+  cmd = { 'rust-analyzer' },
+  filetypes = { 'rust' },
+})
+vim.lsp.enable('rust-analyzer')
+vim.lsp.enable('clangd')
+vim.lsp.enable('pylsp')
+vim.lsp.enable('marksman')
+vim.lsp.enable('prismals')
+vim.lsp.enable('gopls')
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig', {}),

@@ -1,1 +1,5 @@
-require('gruvbox-material').setup({})
+require('gruvbox-material').setup {
+  background = {
+    transparent = true,
+  },
+}
