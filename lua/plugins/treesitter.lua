@@ -1,5 +1,7 @@
-require('nvim-treesitter.configs').setup {
-  ensure_installed = {
+local treesitter = require('nvim-treesitter')
+
+treesitter.setup()
+treesitter.install {
     "c",
     "lua",
     "vim",
@@ -8,11 +10,8 @@ require('nvim-treesitter.configs').setup {
     "markdown",
     "markdown_inline",
     "python",
-    "julia",
     "bash",
     "cpp",
     "rust",
-  },
-
-  auto_install = true,
+    "nix",
 }
