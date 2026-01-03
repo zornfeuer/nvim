@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
 -- NeoTree
 vim.keymap.set('n', '<leader>e', ':Neotree left focus<CR>')
