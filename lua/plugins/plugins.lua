@@ -1,8 +1,0 @@
-require('plugins.cmp')
-require('plugins.colorscheme')
-require('plugins.conform')
-require('plugins.lsp')
-require('plugins.lualine')
-require('plugins.mason')
-require('plugins.neotree')
-require('plugins.treesitter')
