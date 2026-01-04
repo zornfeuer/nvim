@@ -41,6 +41,6 @@ local function setup_lsp()
 end
 
 return {
-  { "neovim/nvim-lspconfig" },
+  "neovim/nvim-lspconfig",
   config = setup_lsp,
 }
