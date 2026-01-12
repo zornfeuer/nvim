@@ -17,6 +17,22 @@ local function setup_parrot()
           "sonar"
         },
       },
+      openrouter = {
+        name = "openrouter",
+        api_key = os.getenv "OPENROUTER_API_KEY",
+        endpoint = "https://openrouter.ai/api/v1/chat/completions",
+        params = {
+          chat = { temperature = 1.1, top_p = 1 },
+          command = { temperature = 1.1, top_p = 1 },
+        },
+        topic = {
+          model = "x-ai/grok-code-fast-1",
+          params = { max_completion_tokens = 64 },
+        },
+        models = {
+          "x-ai/grok-code-fast-1"
+        },
+      }
     },
     hooks = {
       Complete = function(prt, params)
