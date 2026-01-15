@@ -22,6 +22,7 @@ local function setup_lsp()
   vim.lsp.enable('gopls')
   vim.lsp.enable('nil')
   vim.lsp.enable('luals')
+  vim.lsp.enable('jsonls')
 
   vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('UserLspConfig', {}),
